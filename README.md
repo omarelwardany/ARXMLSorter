@@ -1,3 +1,5 @@
+**Academic Honesty Confession**: I seeked help from various resources to fill my knowledge gap, one of those resources was an AI chatbot.
+
 # ARXML Sorter
 
 > **ARXML**: Autosar XML File  
