@@ -101,12 +101,12 @@ public class Main {
             File file = new File(args[0]);
 
             // checks if autosar file is empty
-            try {
+//            try {
                 fileIsEmpty(file);
-            } catch (EmptyAutosarFileException e) {
-                System.out.println(e.getMessage());
-                System.exit(1);
-            }
+//            } catch (EmptyAutosarFileException e) {
+//                System.out.println(e.getMessage());
+//                System.exit(1);
+//            }
             // loading file
             try {
                 doc = loadAutosar(args[0]);
@@ -127,7 +127,7 @@ class NotValidAutosarFileException extends Exception {
     }
 }
 
-class EmptyAutosarFileException extends Exception {
+class EmptyAutosarFileException extends RuntimeException {
     EmptyAutosarFileException() {}
 
     EmptyAutosarFileException(String s) {
